@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chopan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+<header class="bg-red-700 text-white sticky top-0 z-10 rounded-b-lg">
+    <section class="max-w-4xl mx-auto p-4 flex justify-between items-center"><h2 class="text-4xl font-bold"><a href='#hero'>🥩 ÇOPAN</a></h2>
+    <div>
+        <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer">
+            &#9776;
+        </button>
+        <nav class="hidden md:block space-x-8 text-xl" aria-label='main'>
+            <a href="#etler" class="hover:opacity-70">Önümler</a>
+            <a href="#Testimonial" class="hover:opacity-70">Biz Hakda</a>
+            <a href="#contact" class="hover:opacity-70">Habarlaşmak</a>
+        </nav>
+    </div>
+    </section>  
+    <section id="mobile-menu" class="absolute top-0 bg-gradient-to-r from-red-700 to-red-950 w-full text-5xl flex flex-col justify-content-center origin-top animate-open-menu hidden">
+        <button class="text-8xl self-end px-6">
+            &times;
+        </button>
+        <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+            <a href="#hero" class="w-full text-center py-6 hover:opacity-75">Çopan</a>
+            <a href="#etler" class="w-full text-center py-6 hover:opacity-75">Önümler</a>
+            <a href="#Tesimonials" class="w-full text-center py-6 hover:opacity-75">Biz Barada</a>
+            <a href="#contact" class="w-full text-center py-6 hover:opacity-75">Habarlaşmak</a>
+        </nav>
+    </section>
+    
+</header>
+<main class="max-w-4xl mx-auto">
+    <section id="hero" class="widescreen:section-min-height tallscreen:section-max-height flex flex-col-reverse justify-center align-middle px-6 items-center gap-8 mb-12 scroll-mt-40 sm:flex-row  ">
+        <article class="sm:w-1/2">
+            <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900.dark:text-white">Best Meat from <span class="text-red-700 dark:text indigo-300"> Çopan Meat.</span></h2>
+            <p class="max-w-md text-3xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
+                Visit our Store to get juicy, fresh meat... We will provide you with the best meat in Turkmenistan!
+            </p>
+            <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-red-700 dark:text-red-700">Made in Arçman</p>
+        </article>
+        <img class="w-1/2" src="./img/holstein.png" alt="Meat">
+    </section>
+
+    <hr class="mx-auto bg-black dark:bg-white w-1/2">
+    <section id="etler" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-max-height">
+        <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">Önümlerimiz</h2>
+        <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+            <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-500 border-gray-100 bg-white py-6 px-2  dark:bg-black rounded-2xl shadow xl">
+                <img src="./img/meat.png" alt="onumlerr" class="w-1/2 mb-6">
+                <h3 class="text-3xl text center mt-2 text-slate-900 dark:text-white">Et</h3>
+                <p class="hidden sm:block text-3xl text center mt-2 text-slate-500 dark:text-slate-400">$$$</p>
+                <p class="sm:hidden text-2xl text center mt-2 text-slate-500 dark:text-slate-400">Halal Angus Sygyr Eti</p>
+            </li>
+            <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-500 border-gray-100 bg-white py-6 px-2  dark:bg-black rounded-2xl shadow xl">
+                <img src="./img/milk.png " alt="onumlerr" class="w-1/2 mb-6">
+                <h3 class="text-3xl text center mt-2 text-slate-900 dark:text-white">Süýt</h3>
+                <p class="hidden sm:block text-3xl text center mt-2 text-slate-500 dark:text-slate-400">$$</p>
+                <p class="sm:hidden text-2xl text center mt-2 text-slate-500 dark:text-slate-400">Ýokary hili süýt</p>
+            </li>
+            <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-500 border-gray-100 bg-white py-6 px-2  dark:bg-black rounded-2xl shadow xl">
+                <img src="./img/yogurt.png" alt="onumlerr" class="w-1/2 mb-6">
+                <h3 class="text-3xl text center mt-2 text-slate-900 dark:text-white">Gaýmak</h3>
+                <p class="hidden sm:block text-3xl text center mt-2 text-slate-500 dark:text-slate-400">$</p>
+                <p class="sm:hidden text-2xl text center mt-2 text-slate-500 dark:text-slate-400">Gaýmak</p>
+            </li>
+        </ul>
+    </section>
+
+    <hr class="mx-auto bg-black dark:bg-white w-1/2">
+
+    <section id="Testimonial" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:screen:section-min-height">
+        <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">Biz, hakda... </h2>
+        <figure class="my-20">
+            <blockquote class="bg-red-600 dark:bg-black pl-14 pr-8 py-12 rounded-full relative">
+                <p class="text-2xl sm:text-3xl text-center mt-2 text-white dark:text slate-400 before:font-serif before:absolute before:top-0 before left-0 before:text-9xl before:text-white before:opacity-25 before:transform before transalte before:translate-y-2">
+                   Жырны вкусный Молочко. 
+                   Всем Советую!
+                </p>
+            </blockquote>
+            <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                &#8212; Malik,
+            </figcaption>
+        </figure>
+        <figure class="my-20">
+            <blockquote class="bg-red-600 dark:bg-black pl-14 pr-8 py-12 rounded-full relative">
+                <p class="text-2xl sm:text-3xl text-center mt-2 text-white dark:text slate-400 before:font-serif before:absolute before:top-0 before left-0 before:text-9xl before:text-white before:opacity-25 before:transform before transalte before:translate-y-2">
+                   То самое для Шашлычка!
+
+                </p>
+            </blockquote>
+            <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                &#8212; Ahmet,
+            </figcaption>
+        </figure>
+        <figure class="my-20">
+            <blockquote class="bg-red-600 dark:bg-black pl-14 pr-8 py-12 rounded-full relative">
+                <p class="text-2xl sm:text-3xl text-center mt-2 text-white dark:text slate-400 before:font-serif before:absolute before:top-0 before left-0 before:text-9xl before:text-white before:opacity-25 before:transform before transalte before:translate-y-2">
+                   Топ Качество Мясо!
+                   Цены хорошие! 
+                </p>
+            </blockquote>
+            <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                &#8212; Jilena,
+            </figcaption>
+        </figure>
+    </section>
+
+    <hr class="mx-auto bg-black dark:bg-white w-1/2">
+
+    <section id="contact" class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:screen:section-min-height">
+        <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">Habarlaşmak</h2>
+        <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+            <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 border-gray-100 bg-white py-6 px-2  dark:bg-black rounded-2xl shadow xl">
+                <img src="./img/Ahmet.PNG" alt="onumlerr" class="w-1/2 mb-6 rounded-full">
+                <h3 class="text-3xl text center mt-2 text-slate-900 dark:text-white">Ahmet</h3>
+                <p class="sm:block text-3xl text center mt-2 text-slate-500 dark:text-slate-400">Iş yörediji</p>
+            </li>
+            <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 border-gray-100 bg-white py-6 px-2  dark:bg-black rounded-2xl shadow xl">
+                <img src="./img/Malik.jpg " alt="onumlerr" class="w-1/2 mb-6 rounded-full">
+                <h3 class="text-3xl text center mt-2 text-slate-900 dark:text-white">Mälik</h3>
+                <p class="sm:block text-3xl text center mt-2 text-slate-500 dark:text-slate-400">Başlyk</p>
+            </li>
+            <li class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 border-gray-100 bg-white py-6 px-2  dark:bg-black rounded-2xl shadow xl">
+                <img src="./img/Nazar.jpg" alt="onumlerr" class="w-1/2 mb-6 rounded-full">
+                <h3 class="text-3xl text center mt-2 text-slate-900 dark:text-white">Nazar</h3>
+                <p class="sm:block text-3xl text center mt-2 text-slate-500 dark:text-slate-400">Gassap</p>
+
+            </li>
+        </ul>
+        <figure class="my-20">
+            <h3 class="font-bold text-center text-4xl">Biziň Salgymyz...</h3>
+            <blockquote class="bg-white shadow-lg dark:bg-black pl-14 pr-8 py-12 rounded-lg mt-5 relative">
+                <p class="italic text-1xl sm:text-3xl text-center mt-2 text-black dark:text-white before:font-serif before:absolute before:top-0 before left-0 before:text-9xl before:text-white before:opacity-25 before:transform before transalte before:translate-y-2">
+                   Atamyrat Nyýazow Şaýoly, jaý 54, Altyn Asyr Söwda Merkezi, <br> 
+                   Köňe Nissan Center. <br>
+                   +993 64 24 19 91
+                </p>
+            </blockquote>
+        </figure>
+        <section id="down" class="flex flex-col-reverse justify-center sm:flex-row px-6 items-center gap-8 mb-12 scroll-mt-40 ">
+            <img class="w-1/1 rounded-lg" src="./img/map30.png" alt="Meat">
+        </section>
+    </section>
+</main>
+<footer id="footer" class="bg-red-800 text-white text-l">
+<section class="text-center max-w-xl mx-auto p-4 flex-col sm:flex-row sm:justify-between">
+    <address>
+        <h2>Powered by Atalimon</h2>
+        Ashgabat, Turkmenistan<br>
+        Email: <a href="atalimon1399@gmail.com">atalimon1399@gmail.com</a>
+        <p class="text-center">All Rights Reserved 2023</p>
+    </address>
+</section>
+</footer>
+</body>
+</html> 
